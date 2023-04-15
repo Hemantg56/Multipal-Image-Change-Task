@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Multi_Image-Change-Task </title>
+    <style>
+        .main {
+            height: 500px;
+            width: 850px;
+            /* background-color: brown; */
+            box-shadow: 0 0 20px;
+            display: grid;
+            grid-template-columns: 1.1fr 8.9fr;
+            gap: 10px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        
+        .simg {
+            /* border: 1px solid; */
+            display: grid;
+            grid-template-rows: 83.33px;
+            gap: 10px;
+        }
+        
+        .x {
+            /* border: 1px solid; */
+            /* object-fit: contain; */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; font-size: 3rem;">Stranger Things Cast</h1>
+    <div class="main">
+        <div class="simg x">
+            <div class="fimg x">
+                <img src="Img/11.webp" alt="" height="100%" width="100%" onclick="el()">
+            </div>
+            <div class="fimg x">
+                <img src="Img/mike.webp" alt="" height="100%" width="100%" onclick="mi()">
+            </div>
+            <div class="fimg x">
+                <img src="Img/will.webp" alt="" height="100%" width="100%" onclick="wi()">
+            </div>
+            <div class="fimg x">
+                <img src="Img/dustin.webp" alt="" height="100%" width="100%" onclick="du()">
+            </div>
+            <div class="fimg x">
+                <img src="Img/max.webp" alt="" height="100%" width="100%" onclick="mx()">
+            </div>
+            <div class="fimg x">
+                <img src="Img/lucas.webp" alt="" height="100%" width="100%" onclick="lu()">
+            </div>
+        </div>
+        <div class="limg x">
+            <a href=""><img src="" alt="" id="imca"></a>
+        </div>
+    </div>
+
+    <script>
+        img = document.getElementById('imca')
+
+        console.log(img)
+
+        function el() {
+            img.src = 'Img/11.webp'
+            img.style.height = '100%'
+            img.style.width = '100%'
+        }
+
+        function mi() {
+            img.src = 'Img/mike.webp'
+            img.style.height = '100%'
+            img.style.width = '100%'
+        }
+
+        function wi() {
+            img.src = 'Img/will.webp'
+            img.style.height = '100%'
+            img.style.width = '100%'
+        }
+
+        function du() {
+            img.src = 'Img/dustin.webp'
+            img.style.height = '100%'
+            img.style.width = '100%'
+        }
+
+        function mx() {
+            img.src = 'Img/max.webp'
+            img.style.height = '100%'
+            img.style.width = '100%'
+        }
+
+        function lu() {
+            img.src = 'Img/lucas.webp'
+            img.style.height = '100%'
+            img.style.width = '100%'
+        }
+    </script>
+</body>
+
+</html>
